@@ -1,0 +1,36 @@
+.controls {
+  padding: 10px 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.commentsNumber {
+  padding: 0 0 0 6px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.saveButton {
+  width: 20px;
+  height: 20px;
+}
+
+@media all and (min-width: 1024px) {
+  .controls {
+    order: 3;
+    flex: 0 0;
+    margin: 0 0 0 24px;
+    padding: 0;
+  }
+
+  .actions {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .controls {
+    position: relative;
+  }
+}

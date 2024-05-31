@@ -1,0 +1,12 @@
+@media all and (min-width: 1024px) {
+  .cardsList {
+    padding: 40px 0;
+  }
+
+  .cardsListButton {
+    padding: 17px 50px;
+    font-size: 14px;
+    background-color: var(--orange);
+    color: var(--white);
+  }
+}

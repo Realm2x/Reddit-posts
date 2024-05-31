@@ -1,0 +1,23 @@
+.commentUserBlock {
+  display: flex;
+}
+
+.commentUserInfo {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.commentAuthor {
+  color: var(--orange);
+  margin-right: 3px;
+}
+
+.commentDate {
+  color: var(--grey99);
+}
+
+.commentLeague {
+  padding: 2px 7px 4px;
+  background-color: var(--greyD9);
+}

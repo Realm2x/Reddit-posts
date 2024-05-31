@@ -1,0 +1,9 @@
+.answerButton{
+  display: flex;
+  margin-right: 27px;
+}
+
+.answerButtonSvg svg {
+  fill: var(--grey99);
+  margin-right: 6px;
+}

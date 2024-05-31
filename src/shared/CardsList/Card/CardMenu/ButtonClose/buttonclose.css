@@ -1,0 +1,11 @@
+.buttonclose {
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--grey66);
+  background-color: var(--greyD9);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}

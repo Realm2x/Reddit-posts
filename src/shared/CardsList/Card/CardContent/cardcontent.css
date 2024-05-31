@@ -1,0 +1,17 @@
+  .textContent {
+    padding: 0 20px;
+  }
+
+@media all and (min-width: 1024px) {
+  .textContent {
+    order: 2;
+    display: flex;
+    flex-flow: column-reverse wrap;
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .textContent {
+    flex-basis: 672px;
+  }
+}

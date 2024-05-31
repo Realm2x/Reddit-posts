@@ -1,0 +1,22 @@
+.menu {
+  position: absolute;
+  display: flex;
+  order: 3;
+  top: 15px;
+  right: 15px;
+}
+
+@media all and (min-width: 1024px) {
+  .menu {
+    top: 40px;
+    right: 99px;
+    flex: 0 0;
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .menu {
+    top: 65px;
+    right: 119px;
+  }
+}

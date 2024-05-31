@@ -1,0 +1,36 @@
+.commentBlock {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.commentGroupButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 19px;
+  min-height: 30px;
+  margin-bottom: 20px;
+}
+
+.commentMarkup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 21px;
+}
+
+.commentLine {
+  width: 3px;
+  height: 100%;
+  background-color: var(--greyD9);
+}
+
+.commentCardContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.commentCardContent form {
+  margin-bottom: 0;
+}

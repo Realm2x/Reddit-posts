@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.input {
+  width: 100%;
+  min-height: 100px;
+  padding: 16px 18px;
+  font-size: 16px;
+  resize: none;
+  border: 1px solid #D9D9D9;
+  outline: none;
+}
+
+.input[aria-invalid] {
+  border-color: red;
+  outline: red;
+}
+
+.button {
+  align-self: end;
+  padding: 17px 50px;
+  font-size: 14px;
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}

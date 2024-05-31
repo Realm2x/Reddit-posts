@@ -1,0 +1,8 @@
+.complainButton {
+  display: flex;
+}
+
+.complainButtonSvg svg {
+  fill: var(--grey99);
+  margin-right: 6px;
+}
