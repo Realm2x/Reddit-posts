@@ -48,7 +48,7 @@ hmrServer.use(
   })
 );
 
-hmrServer.listen(3000, () => {
+hmrServer.listen(3001, () => {
   console.log("Hmr Server successfully started");
 });
 

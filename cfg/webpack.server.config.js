@@ -11,7 +11,6 @@ module.exports = {
   mode: NODE_ENV ? NODE_ENV : "development",
   entry: path.resolve(__dirname, "../src/server/server.js"),
   output: {
-    publicPath: "/",
     path: path.resolve(__dirname, "../dist/server"),
     filename: "server.js",
   },
@@ -43,15 +42,13 @@ module.exports = {
       },
       {
         test: GLOBAL_CSS_REGEXP,
-        use: ["css-loader"],
+        use: ['css-loader'],
       },
     ],
   },
   optimization: {
     minimize: false,
   },
-  devtool: IS_DEV ? "eval" : false,
-  plugins: [
-    new DefinePlugin({ "process.env.CLIENT_ID": `'${process.env.CLIENT_ID}'` }),
-  ],
+  devtool: IS_DEV ? 'eval' : false,
+  plugins: [new DefinePlugin({'process.env.CLIENT_ID': `'${process.env.CLIENT_ID}'`})]
 };
