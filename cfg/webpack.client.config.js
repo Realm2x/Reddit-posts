@@ -26,9 +26,9 @@ module.exports = {
     "webpack-hot-middleware/client?path=//localhost:3001/static/__webpack_hmr",
   ],
   output: {
+    publicPath: "/dist/client/",
+    filename: "[name].js",
     path: path.resolve(__dirname, "../dist/client"),
-    filename: "client.js",
-    publicPath: "//localhost:3001/static",
   },
   module: {
     rules: [
@@ -54,13 +54,16 @@ module.exports = {
       },
       {
         test: GLOBAL_CSS_REGEXP,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
+  devServer: {
+    historyApiFallback: true,
+    hot: true,
+    port: 3000,
+  },
   devtool: setupDevtool(),
 
-  plugins: IS_DEV
-    ? DEV_PLUGINS.concat(COMMON_PLUGINS)
-    : COMMON_PLUGINS
+  plugins: IS_DEV ? DEV_PLUGINS.concat(COMMON_PLUGINS) : COMMON_PLUGINS,
 };
